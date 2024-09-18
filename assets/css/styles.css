@@ -1,3 +1,4 @@
+
 :root {
     --primary-color: #1a1a2e;
     --secondary-color: #6572e4;
@@ -51,6 +52,37 @@ header.scrolled {
     padding-right: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
+
+/* General styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333; /* Example background color */
+}
+
+#site-title {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0; /* Remove default margin */
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    gap: 10px; /* Adjust spacing between nav items */
+}
+
+.nav-items li {
+    margin: 0 10px;
+}
+
+.nav-items a {
+    color: #fff;
+    text-decoration: none;
+}
+
 #site-title {
     color: #fff;
     font-size: 1.5rem;
@@ -155,7 +187,7 @@ h2 {
 
 .highlight {
     background-color: #6572e4;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 0 4px;
     border-radius: 6px;
 }
@@ -359,6 +391,24 @@ footer {
 
 /* Responsive Design */
 @media screen and (max-width: 600px) {
+    #site-title::before {
+        content: "SZH";
+        visibility: visible;
+        font-size: large;
+    }
+    #site-title {
+        visibility: hidden;
+        display: inline-block;
+    }
+
+    .nav-items {
+        font-size: 0.8rem; /* Adjust font size for smaller screens */
+    }
+
+    .nav-items li {
+        margin: 0 2px; /* Adjust margin for smaller screens */
+    }
+}
     .grid {
         grid-template-columns: 1fr;
     }
