@@ -408,7 +408,7 @@ footer {
     .nav-items li {
         margin: 0 2px; /* Adjust margin for smaller screens */
     }
-}
+
     .grid {
         grid-template-columns: 1fr;
     }
@@ -447,4 +447,5 @@ footer {
         font-size: 0.9rem;
     }
 }
+
 
